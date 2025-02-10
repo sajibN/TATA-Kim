@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
  }
- body {
-    background: url("https://images.unsplash.com/photo-1738965628987-05c3a690036c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8") no-repeat center center/cover;
-    font-family: Arial, sans-serif;
+body{
+    background-color: #550404;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 header{
     position: fixed;
     top: 5%;
@@ -30,6 +31,7 @@ header ul li a{
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
+    color: white;
     transition: background-color 0.3s;
 }
 header ul li a:hover{
@@ -56,4 +58,44 @@ input{
 input:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;  /* Blue color similar to the input focus */
+    color: white;  /* White text color */
+    border: none;  /* Remove default border */
+    border-radius: 25px;  /* Rounded corners */
+    cursor: pointer;  /* Show pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+}
+
+button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+    transform: scale(1.05);  /* Slightly enlarge the button on hover */
+}
+
+button:focus {
+    outline: none;  /* Remove the default focus outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Blue shadow on focus */
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30%;
+    padding: 40px;
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 200px;  /* Set width */
+    height: 200px; /* Set height to match width */
+    padding: 20px;
+    border-radius: 50%; /* Makes it a perfect circle */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
 }
